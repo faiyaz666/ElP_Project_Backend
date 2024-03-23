@@ -1,0 +1,90 @@
+[2024-03-21 15:21:29] [main] [INFO] [] [com.example.userservice.UserServiceApplication] - Starting UserServiceApplication using Java 17.0.8 with PID 19656 (C:\Users\DCL\IdeaProjects\elp-project-backend\user-service\build\classes\java\main started by DCL in C:\Users\DCL\IdeaProjects\elp-project-backend)
+[2024-03-21 15:21:29] [main] [INFO] [] [com.example.userservice.UserServiceApplication] - The following 1 profile is active: "stg"
+[2024-03-21 15:21:33] [main] [INFO] [] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-21 15:21:34] [main] [INFO] [] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 733 ms. Found 1 JPA repository interfaces.
+[2024-03-21 15:21:35] [main] [INFO] [] [org.springframework.cloud.context.scope.GenericScope] - BeanFactory id=067a4d6d-6766-36d9-87b3-e34c805e76fc
+[2024-03-21 15:21:36] [main] [INFO] [] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
+[2024-03-21 15:21:36] [main] [INFO] [] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
+[2024-03-21 15:21:36] [main] [INFO] [] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2024-03-21 15:21:36] [main] [INFO] [] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[2024-03-21 15:21:37] [main] [INFO] [] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2024-03-21 15:21:37] [main] [INFO] [] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 8016 ms
+[2024-03-21 15:21:38] [main] [INFO] [] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-21 15:21:38] [main] [INFO] [] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.7.Final
+[2024-03-21 15:21:38] [main] [INFO] [] [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+[2024-03-21 15:21:39] [main] [INFO] [] [org.hibernate.bytecode.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+[2024-03-21 15:21:40] [main] [INFO] [] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-21 15:21:40] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2024-03-21 15:21:40] [main] [INFO] [] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ede035e
+[2024-03-21 15:21:40] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2024-03-21 15:21:41] [main] [INFO] [] [org.hibernate.bytecode.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+[2024-03-21 15:21:46] [main] [INFO] [] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-03-21 15:21:46] [main] [INFO] [] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-21 15:21:46] [main] [WARN] [] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keycloakService' defined in file [C:\Users\DCL\IdeaProjects\elp-project-backend\user-service\build\classes\java\main\com\example\userservice\service\KeycloakService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.keycloak.admin.client.Keycloak' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-03-21 15:21:46] [main] [INFO] [] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-21 15:21:46] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2024-03-21 15:21:46] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2024-03-21 15:21:46] [main] [INFO] [] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[2024-03-21 15:21:46] [main] [INFO] [] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-03-21 15:21:46] [main] [ERROR] [] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.userservice.service.KeycloakService required a bean of type 'org.keycloak.admin.client.Keycloak' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.keycloak.admin.client.Keycloak' in your configuration.
+
+[2024-03-21 15:48:47] [main] [INFO] [] [com.example.userservice.UserServiceApplication] - Starting UserServiceApplication using Java 17.0.8 with PID 15540 (C:\Users\DCL\IdeaProjects\elp-project-backend\user-service\build\classes\java\main started by DCL in C:\Users\DCL\IdeaProjects\elp-project-backend)
+[2024-03-21 15:48:47] [main] [INFO] [] [com.example.userservice.UserServiceApplication] - The following 1 profile is active: "stg"
+[2024-03-21 15:48:49] [main] [INFO] [] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-21 15:48:49] [main] [INFO] [] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 501 ms. Found 1 JPA repository interfaces.
+[2024-03-21 15:48:50] [main] [INFO] [] [org.springframework.cloud.context.scope.GenericScope] - BeanFactory id=067a4d6d-6766-36d9-87b3-e34c805e76fc
+[2024-03-21 15:48:51] [main] [INFO] [] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
+[2024-03-21 15:48:51] [main] [INFO] [] [org.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
+[2024-03-21 15:48:51] [main] [INFO] [] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+[2024-03-21 15:48:51] [main] [INFO] [] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[2024-03-21 15:48:51] [main] [INFO] [] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+[2024-03-21 15:48:51] [main] [INFO] [] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 3804 ms
+[2024-03-21 15:48:51] [main] [INFO] [] [org.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-21 15:48:51] [main] [INFO] [] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 6.2.7.Final
+[2024-03-21 15:48:51] [main] [INFO] [] [org.hibernate.cfg.Environment] - HHH000406: Using bytecode reflection optimizer
+[2024-03-21 15:48:52] [main] [INFO] [] [org.hibernate.bytecode.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+[2024-03-21 15:48:52] [main] [INFO] [] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] - No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-21 15:48:52] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+[2024-03-21 15:48:53] [main] [INFO] [] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1a819901
+[2024-03-21 15:48:53] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+[2024-03-21 15:48:53] [main] [INFO] [] [org.hibernate.bytecode.internal.BytecodeProviderInitiator] - HHH000021: Bytecode provider name : bytebuddy
+[2024-03-21 15:48:55] [main] [INFO] [] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2024-03-21 15:48:55] [main] [INFO] [] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-21 15:48:55] [main] [WARN] [] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'keycloakService' defined in file [C:\Users\DCL\IdeaProjects\elp-project-backend\user-service\build\classes\java\main\com\example\userservice\service\KeycloakService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.keycloak.admin.client.Keycloak' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-03-21 15:48:55] [main] [INFO] [] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-21 15:48:55] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2024-03-21 15:48:55] [main] [INFO] [] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2024-03-21 15:48:55] [main] [INFO] [] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+[2024-03-21 15:48:55] [main] [INFO] [] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-03-21 15:48:55] [main] [ERROR] [] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.userservice.service.KeycloakService required a bean of type 'org.keycloak.admin.client.Keycloak' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.keycloak.admin.client.Keycloak' in your configuration.
+
